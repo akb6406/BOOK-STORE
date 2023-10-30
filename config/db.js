@@ -1,9 +1,8 @@
-
 const mongoose = require('mongoose');
 
 async function connectToMongoDB() {
     try {
-        await mongoose.connect('mongodb+srv://akb6406:baghel@cluster0.vbbxlek.mongodb.net/BOOK-STORE', {
+        await mongoose.connect('mongodb+srv://akb6406:baghel@cluster0.vbbxlek.mongodb.net/?retryWrites=true&w=majority/BOOK-STORE', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
@@ -14,7 +13,9 @@ async function connectToMongoDB() {
     }
 }
 
-connectToMongoDB(); 
+connectToMongoDB();
 
-module.exports = mongoose.connection;
+module.exports = mongoose;
 
+
+// await mongoose.connect('mongodb+srv://akb6406:baghel@cluster0.vbbxlek.mongodb.net/BOOK-STORE', {
