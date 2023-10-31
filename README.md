@@ -39,11 +39,11 @@ Before using the Book Store API, you should have the following installed:
    cd book-store-api
 
    Install dependencies:
-   ```npm install```
+   `npm install`
 
 
 Configure MongoDB connection by editing `config/db.js`.
-Start the server:```npm start```
+Start the server: `npm start`
 
 
 ## Usage
@@ -57,7 +57,7 @@ To use the API, you can make HTTP requests to the defined endpoints. You can use
 ## Sample Requests and Responses
 Create a new book
 
-```POST /api/books
+`POST /api/books`
 Content-Type: application/json
 
 {
@@ -77,8 +77,8 @@ Response (201 Created):
 ```
 
 Retrieve a list of all books
-```GET /api/books
-```
+ `GET /api/books`
+
 Response (200 OK):
 ```[
   {
