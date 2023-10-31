@@ -12,8 +12,7 @@ The Book Store API is a RESTful service for managing books. It provides Create, 
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Sample Requests and Responses](#sample-requests-and-responses)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -37,12 +36,12 @@ Before using the Book Store API, you should have the following installed:
 
    ```bash
    git clone https://github.com/yourusername/book-store-api.git
-   cd book-store-api```
+   cd book-store-api
 
    Install dependencies:
-   ```npm install
+   ```npm install```
 
-   ```
+
 Configure MongoDB connection by editing `config/db.js`.
 Start the server:```npm start```
 
@@ -97,3 +96,4 @@ Response (200 OK):
 ]
 ```
 
+thanks you
